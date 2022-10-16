@@ -6,7 +6,6 @@ I decided to analyse a dataset of Dungeons & Dragons classes using the link belo
 I wrote this software to find specific data and separate out some of the different data chunks in the dataset. 
 I wanted to learn how to pull certain pieces of information from a dataset to use in different types of programs and potentially games.
 
-{Provide a link to your YouTube demonstration.  It should be a 4-5 minute demo of the data set, the questions and answers, the code running and a walkthrough of the code.}
 
 [Software Demo Video](https://youtu.be/brVGXnl4MJY)
 
