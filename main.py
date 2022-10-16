@@ -1,10 +1,12 @@
-import requests
-
-download_url = "https://raw.githubusercontent.com/fivethirtyeight/data/master/nba-elo/nbaallelo.csv"
-target_csv_path = "nba_all_elo.csv"
-
-response = requests.get(download_url)
-response.raise_for_status()    # Check that the request was successful
-with open(target_csv_path, "wb") as f:
-    f.write(response.content)
-print("Download ready.")
+import pandas as pd
+nba = pd.read_csv("classes.csv")
+type(nba)
+print(len(nba))
+print(nba.shape)
+print(nba.head())
+pd.set_option("display.max.columns", None)
+pd.set_option("display.precision", 2)
+print(nba.tail())
+print(nba.info())
+print(nba.describe())
+print(nba["Class"].value_counts())
